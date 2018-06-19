@@ -1,0 +1,41 @@
+.map{
+    height: $base-unit * 30.625;
+    background-image: url("../img/mapa.png");
+    background-repeat: no-repeat;
+    position: relative;
+
+
+    @media (min-width: 1365px){
+        background-size: 100% 100%;
+    }
+
+    .wrapper{
+        height: 100%;
+    }
+
+    &__cont{
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        //transform: translateY(-50%);
+
+        &__img{
+            float: left;
+           
+
+        }
+
+        &__p{
+            float: left;
+        }
+
+
+    }
+
+    &__pin{
+        position: absolute;
+        left: $base-unit * 64.0625;
+        top: $base-unit * 11.25;
+
+    }
+}

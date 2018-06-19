@@ -1,24 +1,66 @@
 .head{
     position: absolute;
-    z-index: 200;
+    z-index: 30;
     width: 100%;
 
     
-    &__logo{
-        display: block;
-        float: left;
+    &__logo, &__nav{
+        height: $base-unit * 5;
+        float: left;    
     }
-    &__nav{
+ 
+    &__logo{
+        width: $base-unit * 6.25;
+        position: relative;
 
-        float: left;
-        margin-top: $base-unit * 2.5;
+        &__img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter:invert(100%);
+        }
+       
+    }
         
+        
+    &__nav{
 
         &__ul{
 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
             &__li{
-                display: inline;
+                
+                display: inline-block;
                 color: $color-1;
+                width: $base-unit * 8.75;
+                text-align: center;
+                height: $base-unit * 5;
+
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: $base-unit * 3.125;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $color-1;
+                }
+
+                &__a{
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    
+                }
+
+                
             }
         }
 
