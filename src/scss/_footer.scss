@@ -1,0 +1,19 @@
+.foot{
+    background-color: $color-foot-back;
+    height: $base-unit * 5.5;
+    clear: left;
+    position: relative;
+
+
+    &__cont{
+        font-family: 'Mada', sans-serif;
+        font-weight: 300;
+        font-size: $base-unit * 0.75;
+        color: $color-foot-font;  
+        line-height: $base-unit * 1.1875; 
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
