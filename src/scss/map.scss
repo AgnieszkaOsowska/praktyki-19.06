@@ -1,41 +1,54 @@
 .map{
-    height: $base-unit * 30.625;
+    height: 0;
     background-image: url("../img/mapa.png");
     background-repeat: no-repeat;
+    padding-bottom: 35.87%;
+    background-size: 100% auto;
     position: relative;
-
-
-    @media (min-width: 1365px){
-        background-size: 100% 100%;
-    }
-
+    
     .wrapper{
-        height: 100%;
+        height: $base-unit * 30.625;
     }
 
     &__cont{
-        height: 100%;
+        width: $base-unit * 22.8125;
+        height: $base-unit * 12.8125;
         position: absolute;
         top: 50%;
-        //transform: translateY(-50%);
+        transform: translateY(-50%);
 
         &__img{
             float: left;
-           
-
         }
 
         &__p{
+            width: $base-unit * 16.5625;
             float: left;
+            padding-top: $base-unit;
+            font-size: $p-font-size;
+            @include madaLight;
+
+            &__comp{
+                @include madaBlack;
+            }
         }
 
 
     }
 
     &__pin{
+        width: 2.196193265007321%;
+        height: 8.571428571428571%;
         position: absolute;
-        left: $base-unit * 64.0625;
-        top: $base-unit * 11.25;
+        top: 36.73469387755102%;
+        left: 50%;
+        margin-left: 23.9385065885798%;
+
+        &__img{
+            width: 100%;
+            height: 100%;
+        }
 
     }
 }
+

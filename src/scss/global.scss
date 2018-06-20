@@ -21,8 +21,7 @@ h2, .h2{
 }
 
 .p{
-    font-family: 'Mada', sans-serif;
-    font-weight: 300;
+    @include madaLight;
     font-size: $p-font-size;
     line-height: $base-unit * 2.5; 
 }
