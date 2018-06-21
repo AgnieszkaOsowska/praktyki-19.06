@@ -1,12 +1,22 @@
 .cl{
+    height: $base-unit * 45.3125;
+    background-color: pink;
+
     .wrapper{
         position: relative;
         padding-bottom: $base-unit * 10;
+        height: 100%;
+    }
+
+    &__photo{
+        float: left;
     }
 
     &__cont{
-        max-height: $base-unit * 34.375;
+        height: $base-unit * 34.375;
         overflow: hidden;
+        float: left;
+        padding-top: $base-unit * 1.25;
 
         &__quo{
 
@@ -14,25 +24,57 @@
             float: left;
     
                 .q{
-                    width: $base-unit * 6.125;
-                    text-align: right;
-                    font-family: 'Mada', sans-serif;
-                    font-weight: 900;
-                    font-size: $base-unit * 3.875;
+                    @include quotes;
                 }
             
         }
       
          
             
-          //  &__text{
-           //     height: 100%;
-         //       @include width;
-           // }
+        &__text{
+            width: $base-unit * 34.6875;
+            padding-top: $base-unit;
 
-        
+            &__p{
+                @include madaLight;
+                font-size: $base-unit * 1.875;
+            }
+
+        }
+
+        &__btn{
+            padding-top: $base-unit * 2.5;
+
+            &__a{
+                background-color: transparent;
+                border-color: black;
+                font-size: $base-unit;
+                @include madaLight;
+            }
+           
+
+        }
+
+        &__slid{
+            margin-left: $base-unit * 4.0625;
+            padding-left: $base-unit * 5;
+            padding-top: $base-unit * 5;
+
+            &__circ{
+                width: $base-unit;
+                height: $base-unit;
+                background-color: #add6b1;
+                border-radius: 100%;
+                display: inline-block;
+                margin-right: $base-unit;
+            }
+        }
         
       
 
     }
 } 
+
+.a{
+    text-decoration: underline;
+}

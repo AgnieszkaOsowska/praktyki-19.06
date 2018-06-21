@@ -45,6 +45,7 @@
 
             &__ch{
                 margin-right: $base-unit;
+                background-color: white;
             }
 
             &__btn{
@@ -66,4 +67,12 @@
 .p--form{
     font-size: $base-unit * 1.125;
     margin-bottom: $base-unit * 3.75;
+}
+
+.hideAside{
+    display: none;
+}
+
+.showAside{
+    display: block;
 }

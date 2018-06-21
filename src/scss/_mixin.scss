@@ -13,3 +13,12 @@
     font-family: 'Mada', sans-serif;
     font-weight: 900;
 };
+
+@mixin quotes{
+    width: $base-unit * 6.125;
+    text-align: right;
+    font-family: 'Mada', sans-serif;
+    font-weight: 900;
+    font-size: $base-unit * 3.875;
+    padding-right: $base-unit;
+}

@@ -30,12 +30,20 @@
        }
 
        &__btn{
-            width: $base-unit * 6.25;
+            width: $base-unit * 5;
             float: left;
-
-           
+            font-size: $base-unit * 0.875;
+            @include madaLight;    
        }
     }
 
 }
 
+.flaticon-cross-out{
+    margin-left: $base-unit;
+    font-size: $base-unit * 0.625;
+}
+
+.hideCookie {
+    display: none;
+}

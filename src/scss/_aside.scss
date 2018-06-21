@@ -1,11 +1,11 @@
-.mission{
-    &__aside{
+.aside{
         width: $base-unit * 6.875;
-        height: $base-unit * 34.375;
+        height: 100%;
         position: absolute;
-        left: 91%;
+        left: 92%;
         text-align: center;
         top: 0;
+        z-index: 2000;
         .number{
             height: $base-unit * 15.625;
             .n{
@@ -22,45 +22,53 @@
                     height: 1px;
                     position: absolute;
                     bottom: -($base-unit * 2.1825);
-                    background-color: #efc73c;
+                    background-color: $color-3;
                 }
             }
         }
-        &__arrows{
-            height: $base-unit * 18.75;
-            width: 100%;
-           position: absolute;
-          top: $base-unit * 24.0625;
+    }
+
+
+    .arr{
+        height: $base-unit * 18.75;
+        width: 100%;
+       position: absolute;
+      top: $base-unit * 24.0625;
+      
+        .flaticon-down-arrow:before{
+            content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+               // bottom: -($base-unit * 2.1825);
+                background-color: #efc73c;
+        }
+
+        &__cont{
+
+            &__up, &__down{
+                background-color: white;
+                border: none;
+                display: block;
+                float: left;
+                font-size: $base-unit * 1.1875;
+                margin: 0 auto;
+            
+            }
           
-            .flaticon-down-arrow:before{
-                content: "";
-                    display: block;
-                    width: 100%;
-                    height: 1px;
-                    position: absolute;
-                   // bottom: -($base-unit * 2.1825);
-                    background-color: #efc73c;
+            &__down{
+                clear: left;
+        
             }
 
-            
-        }
-        &__arrows__up, &__arrows__down{
-            background-color: white;
-            border: none;
-            display: block;
-            float: left;
-            font-size: $base-unit * 1.1875;
-            margin: 0 auto;
-        
-        }
-      
-        &__arrows__down{
-            clear: left;
 
-            
-          
         }
+
+       
+    }
+ 
+
+
+
    
-
-    } 
-}

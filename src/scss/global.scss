@@ -14,7 +14,7 @@ h2, .h2{
     font-size: $h2-font-size;
     letter-spacing: 0;
     margin: 0 auto;
-    margin-top: $base-unit * 5;
+    padding-top: $base-unit * 5;
     font-family: 'Homenaje', sans-serif;
     text-align: center;
     padding-bottom: $base-unit;
@@ -25,7 +25,7 @@ h2, .h2{
     font-size: $p-font-size;
     line-height: $base-unit * 2.5; 
 }
-a {
+.a {
     color: inherit;
     text-decoration: none;
 }

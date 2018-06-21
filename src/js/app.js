@@ -73,8 +73,11 @@ btnPic1.addEventListener('click', ()=> {
 var btnForm1 = document.getElementsByClassName('form__cont__btn')[0];
 var form = document.getElementsByClassName('form__cont__form')[0];
 var text = document.getElementsByClassName('form__cont__text')[0];
+var aside = document.getElementsByClassName('hideAside')[0];
+
 form.hidden=true;
 text.hidden=true;
+aside.hidden=true;
 
 var arD = document.getElementById('ar');
 
@@ -82,9 +85,11 @@ btnForm1.addEventListener('click', ()=> {
   if ((form.hidden === true) & (text.hidden === true)) {
     arD.classList.remove('flaticon-download');
     arD.classList.add('flaticon-up-arrow-1');
+    aside.classList.remove('hideAside');
    
     form.hidden = false;
     text.hidden = false;
+    //aside.hidden=false;
   }
   else {
     arD.classList.remove('flaticon-up-arrow-1');
@@ -92,6 +97,7 @@ btnForm1.addEventListener('click', ()=> {
  
     form.hidden = true;
     text.hidden = true;
+    aside.hidden=true;
   }
 });
 
@@ -142,4 +148,12 @@ var btnForm2 = document.getElementsByClassName('form__cont__form__btn')[0];
 
 btnForm2.addEventListener('click', checkForm);
 
+
+//cookies
+
+var btnCookie = document.getElementsByClassName('cookie__cont__btn')[0];
+
+btnCookie.addEventListener('click', ()=>{
+  document.getElementsByClassName('cookie')[0].classList.toggle('hideCookie');
+})
 
