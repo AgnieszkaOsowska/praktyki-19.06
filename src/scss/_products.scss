@@ -20,7 +20,7 @@
              &__img{
                  width: $base-unit * 10.3;
                  padding-top: $base-unit;
-                 margin-bottom: $base-unit;
+                 margin-top: $base-unit;
                  background-color: #fff;
                  border: none;
 
@@ -30,51 +30,30 @@
 }
 
 
-/*.dropbtn{
-    background-color: $color-1;
-    border: none;
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
-
-
-.dropdown-content{
-    display: none;
-    width: $base-unit * 10.3;
-    padding-left: $base-unit * 1.875;
-    padding-right: $base-unit * 1.875;
-    font-size: $base-unit * 0.875;
-}
-
-.show {
-    display: block;
-    background-color: $color-2;
-    color: $color-1;
-  
-}*/
-
-
 
 
 .dropdown-content{
     display: none;
     position: absolute;
-    //z-index: 1;
-    width: $base-unit * 10.3;
-    padding-left: $base-unit * 1.875;
-    padding-right: $base-unit * 1.875;
+    z-index: 1;
+    width: $base-unit * 12.3125;
     font-size: $base-unit * 0.875;
-    right: 100%;
-    transform: translateX(-100%);
-    top: 50%;
+    padding: 0 $base-unit $base-unit * 2 $base-unit;
 }
 
-#1{
- 
-}
+
 
 .show{
     display: block;
     background-color: $color-2;
     color: $color-1;
+    text-align: left;
 }
 
 
@@ -83,4 +62,6 @@
 }
 .prod__cont__img--colorGr{
     background-color: #9D3FE8;
+    box-sizing: content-box;
+    padding: $base-unit * 2 $base-unit;
 }

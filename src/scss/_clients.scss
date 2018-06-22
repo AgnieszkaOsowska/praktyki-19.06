@@ -1,6 +1,12 @@
 .cl{
     height: $base-unit * 45.3125;
-    background-color: pink;
+    background-image: url("../img/tlo.png");
+    background-repeat: no-repeat;
+    position: relative;
+
+    @media (min-width: 1367px){
+        background-size: 100% auto;
+    }
 
     .wrapper{
         position: relative;

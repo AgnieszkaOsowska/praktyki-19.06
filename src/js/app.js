@@ -1,70 +1,89 @@
-/*function myFunction() {
-    document.getElementById("myDropdown1").classList.toggle("prod__cont__img--colorIn");
-    document.getElementById("myDropdown1").classList.toggle("prod__cont__img--colorGr");
-    document.getElementById("myDropdown2").classList.toggle("show");
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-  
-      if (dropdowns.classList.contains('show')) {
-        dropdowns.classList.remove('show');
-      
-    }
-}*/
-
-/*window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-  
-      if (dropdowns.classList.contains('show')) {
-        dropdowns.classList.remove('show');
-      
-    }
-  }
-}*/
-
-/*var b = document.getElementById('btn');
-
-b.addEventListener('click', () => {
-    document.getElementById("myDropdown1").classList.toggle("prod__cont__img--colorIn");
-    document.getElementById("myDropdown1").classList.toggle("prod__cont__img--colorGr");
-    document.getElementById("myDropdown2").classList.toggle("show");
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-  
-      if (dropdowns.classList.contains('show')) {
-        dropdowns.classList.remove('show');
-      
-    }
-});*/
-
-
-
-
+//produkty
 
 
 var btnPic1 = document.getElementById('pic1');
-
 btnPic1.addEventListener('click', ()=> {
   document.getElementById('text1').classList.toggle("show");
   document.getElementById("pic1").classList.toggle("prod__cont__img--colorIn");
   document.getElementById("pic1").classList.toggle("prod__cont__img--colorGr");
-})
+});
 
+var btnPic2 = document.getElementById('pic2');
+btnPic2.addEventListener('click', ()=> {
+  document.getElementById('text2').classList.toggle("show");
+  document.getElementById("pic2").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic2").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic3 = document.getElementById('pic3');
+btnPic3.addEventListener('click', ()=> {
+  document.getElementById('text3').classList.toggle("show");
+  document.getElementById("pic3").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic3").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic4 = document.getElementById('pic4');
+btnPic4.addEventListener('click', ()=> {
+  document.getElementById('text4').classList.toggle("show");
+  document.getElementById("pic4").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic4").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic5 = document.getElementById('pic5');
+btnPic5.addEventListener('click', ()=> {
+  document.getElementById('text5').classList.toggle("show");
+  document.getElementById("pic5").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic5").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic6 = document.getElementById('pic6');
+btnPic6.addEventListener('click', ()=> {
+  document.getElementById('text6').classList.toggle("show");
+  document.getElementById("pic6").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic6").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic7 = document.getElementById('pic7');
+btnPic7.addEventListener('click', ()=> {
+  document.getElementById('text7').classList.toggle("show");
+  document.getElementById("pic7").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic7").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic8 = document.getElementById('pic8');
+btnPic8.addEventListener('click', ()=> {
+  document.getElementById('text8').classList.toggle("show");
+  document.getElementById("pic8").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic8").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic9 = document.getElementById('pic9');
+btnPic9.addEventListener('click', ()=> {
+  document.getElementById('text9').classList.toggle("show");
+  document.getElementById("pic9").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic9").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic10 = document.getElementById('pic10');
+btnPic10.addEventListener('click', ()=> {
+  document.getElementById('text10').classList.toggle("show");
+  document.getElementById("pic10").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic10").classList.toggle("prod__cont__img--colorGr");
+});
 
+var btnPic11 = document.getElementById('pic11');
+btnPic11.addEventListener('click', ()=> {
+  document.getElementById('text11').classList.toggle("show");
+  document.getElementById("pic11").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic11").classList.toggle("prod__cont__img--colorGr");
+});
 
-
-
-
-
-
+var btnPic12 = document.getElementById('pic12');
+btnPic12.addEventListener('click', ()=> {
+  document.getElementById('text12').classList.toggle("show");
+  document.getElementById("pic12").classList.toggle("prod__cont__img--colorIn");
+  document.getElementById("pic12").classList.toggle("prod__cont__img--colorGr");
+});
 
 
 
@@ -156,4 +175,6 @@ var btnCookie = document.getElementsByClassName('cookie__cont__btn')[0];
 btnCookie.addEventListener('click', ()=>{
   document.getElementsByClassName('cookie')[0].classList.toggle('hideCookie');
 })
+
+
 

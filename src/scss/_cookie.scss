@@ -7,6 +7,11 @@
     transform: translateY(-100%);
     z-index: 30;
     opacity: 0.8;
+    
+    @media (min-width: 1367px){
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     &__cont{
         float: left;
